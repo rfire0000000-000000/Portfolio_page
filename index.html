@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Hello World!</h2>
-    <p>This is my portfolio - still in progress!</p>
-
     <!-- HEADER SECTION -->
     <header>
-      <h1>Kristijan Milojkovic</h1>
-      <p>A upcoming web developer eager to learn the way of the code.</p>
+      <h1>Welcome to my Portfolio!</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hire-me">Hire-me</a></li>
         </ul>
       </nav>
     </header>
@@ -29,7 +27,7 @@
     <section id="profile-img">
       <h2>My Profile</h2>
       <img
-        src="https://images.pexels.com/photos/7809123/pexels-photo-7809123.jpeg"
+        src="assets/Profile.jpg"
         alt="Kristijan Milojkovic - profile picture"
         width="200"
         height="200"
@@ -43,6 +41,16 @@
         Hi! I'm Kristijan, a new web developer who always strives to improve my
         coding skills, learn new technologies, and work on exciting projects.
       </p>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+      <h2>My Hobbies</h2>
+      <ol>
+        <li>MMA</li>
+        <li>Games</li>
+        <li>Coding</li>
+      </ol>
     </section>
 
     <!-- PROJECTS -->
@@ -59,15 +67,29 @@
     </section>
 
     <!-- TECH GLOSSARY -->
-    <section id="tech-glossary">
-      <h2>Tech Glossary</h2>
+    <section id="tech-glossary" aria-labelledby="tech-glossary-title">
+      <header>
+        <h2 id="tech-glossary-title">Tech Glossary</h2>
+      </header>
+
       <dl>
-        <dt>HTML</dt>
-        <dd>The standard language for creating web pages.</dd>
-        <dt>CSS</dt>
-        <dd>A stylesheet language used for styling HTML documents.</dd>
-        <dt>JavaScript</dt>
-        <dd>A programming language that brings interactivity to websites.</dd>
+        <dt id="term-html">HTML</dt>
+        <dd aria-labelledby="term-html">
+          <strong>HyperText Markup Language</strong> — The standard language for
+          creating web pages
+        </dd>
+
+        <dt id="term-css">CSS</dt>
+        <dd aria-labelledby="term-css">
+          <strong>Cascading Style Sheets</strong> — A stylesheet language used
+          for styling HTML documents.
+        </dd>
+
+        <dt id="term-js">JavaScript</dt>
+        <dd aria-labelledby="term-js">
+          <strong>JavaScript</strong> — A programming language that brings
+          interactivity to websites
+        </dd>
       </dl>
     </section>
 
